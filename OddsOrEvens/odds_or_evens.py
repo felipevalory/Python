@@ -1,9 +1,3 @@
-### Desafio 68
-
-# jogo do par ou impar com o pc
-# jog interrompido quando o jogador perder
-# mostrar total de vitorias consecutivas que conquistou no final do jogo
-
 print('=-'*15)
 print("Let's play odds or evens")
 print('=-'*15)

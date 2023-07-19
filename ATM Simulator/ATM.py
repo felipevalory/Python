@@ -1,11 +1,3 @@
-### Desafio 71
-
-# simulador de caixa eletrônico
-# perguntar ao usuário qual valor será sacado (numero inteiro)
-# informar quantas cedulas de cada valor serão entregues
-# considerar que o caixa possui cédulas de R$ 50, R$ 20, R$ 10 e R$ 1
-
-
 print('='*30)
 print('BANCO DO DINHEIRO'.center(30))
 print('='*30)

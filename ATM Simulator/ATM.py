@@ -1,26 +1,26 @@
 print('='*30)
-print('BANCO DO DINHEIRO'.center(30))
+print("MONEY'S BANK".center(30))
 print('='*30)
-saque = int(input('Qual o valor do saque? R$ '))
-total = saque
-cedula = 50
-totalced = 0
+withdraw = int(input('What is the withdraw amount? U$ '))
+total = withdraw
+banknote = 50
+total_banknote = 0
 while True:
-    if total >= cedula:
-        total -= cedula
-        totalced += 1
+    if total >= banknote:
+        total -= banknote
+        total_banknote += 1
     else:
-        if totalced > 0:
-            print(f'Total de {totalced} cédulas de R$ {cedula}')
-        if cedula == 50:
-            cedula = 20
-        elif cedula == 20:
-            cedula = 10
-        elif cedula == 10:
-            cedula = 1
-        totalced = 0
+        if total_banknote > 0:
+            print(f'Total of {total_banknote} banknotes of U$ {banknote}')
+        if banknote == 50:
+            banknote = 20
+        elif banknote == 20:
+            banknote = 10
+        elif banknote == 10:
+            banknote = 1
+        total_banknote = 0
         if total == 0:
             break
 print('='*30)
-print('Volte sempre ao BANCO DO DINHEIRO! Tenha um bom dia!')
+print("Come back anytime at MONEY'S BANK! Have a nice day!")
 

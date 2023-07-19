@@ -1,21 +1,21 @@
 from random import randint
 from time import sleep
-itens = ('Pedra', 'Papel', 'Tesoura')
-print('''Escolha uma opção abaixo:
+items = ('Rock', 'Paper', 'Scissors')
+print('''Choose an option below:
       
-[ 0 ] Pedra
-[ 1 ] Papel
-[ 2 ] Tesoura
+[ 0 ] Rock
+[ 1 ] Paper
+[ 2 ] Scissors
       ''')
 
 while True:
-    jogador = input('Sua escolha: ')
+    player = input('Your turn: ')
 
-    if jogador.isdigit:
+    if player.isdigit:
         try:
-            jogador_int = int(jogador)
+            player_int = int(player)
             
-            computador = randint(0,2)
+            computer = randint(0,2)
             print('JO')
             sleep(0.5)
             print('KEN')
@@ -23,39 +23,39 @@ while True:
             print('PÔ!')
             print('-='*11)
             
-            print(f'O computador escolheu {itens[computador]} e você {itens[jogador_int]}')
+            print(f'The computer chose {items[computer]} and you {items[player_int]}')
 
-            if computador == 0:
-                if jogador_int == 0:
-                        print('Deu empate! 💁')
-                elif jogador_int == 1:
-                    print('Parabéns, você ganhou! 🎉')
-                elif jogador_int == 2:
-                    print('Que pena, você perdeu! 😔 Tente novamente!')
+            if computer == 0:
+                if player_int == 0:
+                        print('Tied! 💁')
+                elif player_int == 1:
+                    print('Congrats! You win! 🎉')
+                elif player_int == 2:
+                    print('What a shame, you lose! 😔 Try it again!')
                 else:
-                    print('JOGADA INVÁLIDA!')
-            elif computador == 1:
-                if jogador_int == 0:
-                    print('Que pena, você perdeu! 😔 Tente novamente!')
-                elif jogador_int == 1:
-                    print('Deu empate! 💁')
-                elif jogador_int == 2:
-                    print('Parabéns, você ganhou! 🎉')
+                    print('INVALID MOVE!')
+            elif computer == 1:
+                if player_int == 0:
+                    print('What a shame, you lose! 😔 Try it again!')
+                elif player_int == 1:
+                    print('Tied! 💁')
+                elif player_int == 2:
+                    print('Congrats! You win! 🎉')
                 else:
-                    print('JOGADA INVÁLIDA!')
-            elif computador == 2:
-                if jogador_int == 0:
-                    print('Parabéns, você ganhou! 🎉')
-                elif jogador_int == 1:
-                    print('Que pena, você perdeu! 😔 Tente novamente!')
-                elif jogador_int == 2:
-                    print('Deu empate! 💁')
+                    print('INVALID MOVE!')
+            elif computer == 2:
+                if player_int == 0:
+                    print('Congrats! You win! 🎉')
+                elif player_int == 1:
+                    print('What a shame, you lose! 😔 Try it again!')
+                elif player_int == 2:
+                    print('Tied! 💁')
                 else:
-                    print('JOGADA INVÁLIDA!')
+                    print('INVALID MOVE!')
                   
         except ValueError:
-            print('Por favor, digite um número válido!')
+            print('Please, enter a valid number!')
         except IndexError:
-            print('Valor não encontrado. Escolha um número válido')
+            print('Number not found. Choose a valid number')
 
 
